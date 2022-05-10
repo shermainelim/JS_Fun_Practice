@@ -15,26 +15,26 @@ describe("JS_Fun_Practice", function () {
       assert.equal(sol.addb(3, 4), 7);
     });
   });
-  // describe("subb(a,b)", function () {
-  //   it("takes two numbers and returns their difference", function () {
-  //     assert.equal(sol.subb(3, 4), -1);
-  //   });
-  // });
-  // describe("mulb(a,b)", function () {
-  //   it("takes two numbers and returns their product", function () {
-  //     assert.equal(sol.mulb(3, 4), 12);
-  //   });
-  // });
-  // describe("minb(a,b)", function () {
-  //   it("takes two numbers and returns the smaller one", function () {
-  //     assert.equal(sol.minb(3, 4), 3);
-  //   });
-  // });
-  // describe("maxb(a,b)", function () {
-  //   it("takes two numbers and returns the larger one", function () {
-  //     assert.equal(sol.maxb(3, 4), 4);
-  //   });
-  // });
+  describe("subb(a,b)", function () {
+    it("takes two numbers and returns their difference", function () {
+      assert.equal(sol.subb(3, 4), -1);
+    });
+  });
+  describe("mulb(a,b)", function () {
+    it("takes two numbers and returns their product", function () {
+      assert.equal(sol.mulb(3, 4), 12);
+    });
+  });
+  describe("minb(a,b)", function () {
+    it("takes two numbers and returns the smaller one", function () {
+      assert.equal(sol.minb(3, 4), 3);
+    });
+  });
+  describe("maxb(a,b)", function () {
+    it("takes two numbers and returns the larger one", function () {
+      assert.equal(sol.maxb(3, 4), 4);
+    });
+  });
   // describe("add(...nums)", function () {
   //   it("is an add fuction that is generalized for any amount of arguments", function () {
   //     assert.equal(sol.add(1, 2, 4), 7);
