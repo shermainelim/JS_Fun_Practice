@@ -35,16 +35,16 @@ describe("JS_Fun_Practice", function () {
       assert.equal(sol.maxb(3, 4), 4);
     });
   });
-  // describe("add(...nums)", function () {
-  //   it("is an add fuction that is generalized for any amount of arguments", function () {
-  //     assert.equal(sol.add(1, 2, 4), 7);
-  //   });
-  // });
-  // describe("sub(...nums)", function () {
-  //   it("is a sub fuction that is generalized for any amount of arguments", function () {
-  //     assert.equal(sol.sub(1, 2, 4), -5);
-  //   });
-  // });
+  describe("add(...nums)", function () {
+    it("is an add fuction that is generalized for any amount of arguments", function () {
+      assert.equal(sol.add(1, 2, 4), 7);
+    });
+  });
+  describe("sub(...nums)", function () {
+    it("is a sub fuction that is generalized for any amount of arguments", function () {
+      assert.equal(sol.sub(1, 2, 4), -5);
+    });
+  });
   // describe("mul(...nums)", function () {
   //   it("is a mul fuction that is generalized for any amount of arguments", function () {
   //     assert.equal(sol.mul(1, 2, 4), 8);

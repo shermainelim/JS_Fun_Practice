@@ -47,6 +47,6 @@ add(2, 4, 2, 1, 4); //return 13
 const sub = (...nums) => {
   return nums.reduce((a, b) => a - b);
 };
-sub(234, 41, 2, 1, 4); //return 186
+sub(1, 2, 4);
 
-module.exports = { identity, addb, subb, mulb, minb, maxb };
+module.exports = { identity, addb, subb, mulb, minb, maxb, add, sub };
