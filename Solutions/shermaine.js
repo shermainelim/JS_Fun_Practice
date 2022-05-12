@@ -49,4 +49,30 @@ const sub = (...nums) => {
 };
 sub(1, 2, 4);
 
-module.exports = { identity, addb, subb, mulb, minb, maxb, add, sub };
+//9.Write a function mul that is generalized for any amount of arguments
+const mul = (...nums) => {
+  return nums.reduce((a, b) => a * b);
+};
+mul(1, 2, 4);
+
+// Write a binary function min that takes two numbers and returns the smaller one
+const min = (a, b) => (a < b ? a : b);
+
+// Write a binary function max that takes two numbers and returns the larger one
+const max = (...nums) => {
+  return nums.reduce((a, b) => (a > b ? a : b));
+};
+
+module.exports = {
+  identity,
+  addb,
+  subb,
+  mulb,
+  minb,
+  maxb,
+  add,
+  sub,
+  mul,
+  min,
+  max,
+};
