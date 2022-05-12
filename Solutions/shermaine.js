@@ -63,6 +63,36 @@ const max = (...nums) => {
   return nums.reduce((a, b) => (a > b ? a : b));
 };
 
+// Write a function addRecurse that is the generalized add function but uses recursion
+const addRecurse = (...nums) => {
+  if (nums.length === 1) return nums[0];
+  return nums.pop() + addRecurse(...nums);
+};
+//code trace
+// (1,2,4)
+// return 4 + addRecurse(1,2)
+// (1,2)
+// reurn 2 + add Recurse(1)
+//(1)
+// if true, return 1
+// go back to 2+ 1 = 3
+// go back to 4+3 = 7
+
+// Write a function addRecurse that is the generalized multiply function but uses recursion
+const mulRecurse = (...nums) => {
+  if (nums.length === 1) return nums[0];
+  return nums.pop() * mulRecurse(...nums);
+};
+//code trace
+// (1,2,4)
+// return 4 * mulRecurse(1,2)
+// (1,2)
+// reurn 2 * mulRecurse(1)
+//(1)
+// if true, return 1
+// go back to 2*1 = 2
+// go back to 4*2 = 8
+
 module.exports = {
   identity,
   addb,
@@ -75,4 +105,6 @@ module.exports = {
   mul,
   min,
   max,
+  addRecurse,
+  mulRecurse,
 };
